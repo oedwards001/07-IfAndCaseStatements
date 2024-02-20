@@ -1,5 +1,28 @@
+# GOT HElP FROM JOSH, SOFTWARE ENGINEER STUDENT
+
+import math
+
+def add(first_param, second_param):
+    addition = first_param + second_param
+    return addition    
+  
+def subtract(first_param, second_param):
+    subtraction = first_param - second_param
+    return subtraction
+
+def multiply(first_param, second_param):
+    multiplication = first_param*second_param
+    return multiplication
+
+def divide(first_param, second_param):
+    division = first_param / second_param
+    return division
+
+def power(first_param, second_param):
+    powerraise = math.pow(first_param, second_param)
+    return powerraise
 ###############################################################################
-# TODO: 1. (4 pts)
+# Done: 1. (4 pts)
 #
 #   In this module, we will improve upon the calculator that we built in the
 #   Session 5 coding exercises.
@@ -39,9 +62,54 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def if_calc():
 
+    print("Hello, how are you?")
+
+    number1 = input("Please enter your first number: ") 
+    number1 = int(number1) 
+    
+    number2 = input("Please enter your second number: ")
+    number2 = int(number2)
+    
+    addition = add(first_param=number1, second_param=number2) 
+    print(f"Add: {addition}") 
+
+    subtraction = subtract(first_param=number1, second_param=number2)
+    print (f"Subtract: {subtraction}")
+
+    multiplication = multiply(first_param=number1, second_param=number2)
+    print (f"Multiply: {multiplication}")
+
+    division = divide(first_param=number1, second_param=number2)
+    print (f"Divide: {division}")
+
+    powerraise = power(first_param=number1, second_param=number2)
+    print (f"Power: {powerraise}")
+
+    print("(+) Add")
+    print("(-) Subtract")
+    print("(*) Multiply")
+    print("(/) Division")
+    chosen_operation = input("Which operation do you want to do? ")
+
+    if chosen_operation == "add":
+        print(addition)
+    elif chosen_operation == "subtract":
+        print(subtraction)
+    elif chosen_operation == "multiply":
+        print(multiplication)
+    elif chosen_operation == "division":
+        print(division)
+    else:
+        print("Invalid Operation!")
+
+
+    print("Goodbye!")
+
+    
 ###############################################################################
-# TODO: 2. (4 pts)
+# Done: 2. (4 pts)
 #
 #   Now, do the same thing that you did in _TODO_ 1, but this time, use case
 #   statements in your solution instead of if statements.
@@ -51,3 +119,52 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def case_calc():
+
+    print("Hello, how are you?")
+
+    number1 = input("Please enter your first number: ") 
+    number1 = int(number1) 
+    
+    number2 = input("Please enter your second number: ")
+    number2 = int(number2)
+    
+    addition = add(first_param=number1, second_param=number2) 
+    print(f"Add: {addition}") 
+
+    subtraction = subtract(first_param=number1, second_param=number2)
+    print (f"Subtract: {subtraction}")
+
+    multiplication = multiply(first_param=number1, second_param=number2)
+    print (f"Multiply: {multiplication}")
+
+    division = divide(first_param=number1, second_param=number2)
+    print (f"Divide: {division}")
+
+    powerraise = power(first_param=number1, second_param=number2)
+    print (f"Power: {powerraise}")
+
+    print("(+) Add")
+    print("(-) Subtract")
+    print("(*) Multiply")
+    print("(/) Division")
+    
+    command = input("Which operation do you want to do? ")
+
+    match command:
+
+        case "add":
+            print(addition)
+        case "subtract":
+            print(subtraction)
+        case "multiply":
+            print(multiplication)
+        case "division":
+            print(division)
+        case other:
+            print("Invalid Operation!")
+
+
+    print("Goodbye!")
+
+
