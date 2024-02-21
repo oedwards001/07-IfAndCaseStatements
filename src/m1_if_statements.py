@@ -16,8 +16,9 @@ txt = "The quick brown fox jumps over the lazy dog."
 def is_positive(number):
     if number == 0 or number > 0:
         return True
-    else: 
+    elif number <= 0: 
         return False
+
 
 
 ###############################################################################
@@ -44,8 +45,9 @@ substr = "The quick brown fox"
 def contains(str, substr):
     if substr in str:
         return True
-    else:
+    elif substr not in str:
         return False
+
 
 
 ###############################################################################
